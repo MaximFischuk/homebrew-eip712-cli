@@ -1,26 +1,26 @@
 class Eip712Cli < Formula
   desc "A command-line tool for working with EIP-712 typed data"
   homepage "https://github.com/MaximFischuk/eip712-cli"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/MaximFischuk/eip712-cli/releases/download/v#{version}/eip712-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "bfd9f7b7c917f5c0118322b7a8e2ff020d397a3c867695bcca407e605dc7d6d1"
+      sha256 "3079f7b1fc9e8786c7650cdf6efa29395237ecaac542773c4eace51018d2f036"
     else
       url "https://github.com/MaximFischuk/eip712-cli/releases/download/v#{version}/eip712-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "3e14fef54b125e440dbdfa77dec698e4975c21b8490a366397bb5b7ec798f0d8"
+      sha256 "ca1bfdf8d15d812628fde2bb2576cc525ca66948b06bed99ce5997f6515a10b3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/MaximFischuk/eip712-cli/releases/download/v#{version}/eip712-cli-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2ad693d7ab7fc92d641efc69ea7e8cc2cb4fbef9142a4bb29cac045124de0131"
+      sha256 "64178bc87a9a231b0bac1f7fac64ee8f531b79688c80c64ac800489371e4cf8f"
     else
       url "https://github.com/MaximFischuk/eip712-cli/releases/download/v#{version}/eip712-cli-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e494c057a15dbebeb7a4b6c84870cc5d9ec9050485e02af6bde7cb26c14382fc"
+      sha256 "5808fcb383db4c5f5c14853ab3f5422b6b1e7b191129ed5ac03e45cef38ffd79"
     end
   end
 
